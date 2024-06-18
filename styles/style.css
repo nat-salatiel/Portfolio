@@ -21,13 +21,19 @@ body {
     color: var(--cor-secundaria);
 }
 
+header{
+    padding: 0;
+}
+
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 0;
+    margin: 10px;
 }
 
 .cabecalho-menu {
     display: flex;
-    gap: 80px;
+    justify-content: center;
+    gap: 10%;
 }
 
 .cabecalho-menu-links {
@@ -53,7 +59,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-
+    
 }
 
 .apresentacao-conteudo-titulo {
@@ -73,6 +79,18 @@ body {
 
 
 .apresentacao-conteudo-texto a {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-weight: bold;
+}
+
+.apresentacao-conteudo-texto-experiencia-estudos{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    margin: 0 15px;
+}
+
+.apresentacao-conteudo-texto-experiencia-estudos a{
     text-decoration: none;
     color: var(--cor-terciaria);
     font-weight: bold;
@@ -131,11 +149,12 @@ body {
 @media(max-width: 1200px) {
 
     .cabecalho {
-        padding: 10%;
+        padding: 4%;
     }
 
     .cabecalho-menu {
         justify-content: center;
+      
     }
 
     .apresentacao {
